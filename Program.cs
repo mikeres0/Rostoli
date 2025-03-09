@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        string jsonFilePath = "C:\\Rosters\\config\\staff_data.json"; // Your input JSON file
+        string jsonFilePath = @"../../../examples/config/staff_data.example.json";
         var jsonString = File.ReadAllText(jsonFilePath);
 
         var staffRoster = JsonConvert.DeserializeObject<StaffRoster>(jsonString);
@@ -65,7 +65,7 @@ class Program
         string formattedDate = nextMonday.ToString("dd-MM-yy");
 
         // export loc
-        string exportFolderPath = @"C:\Rosters\exports";
+        string exportFolderPath = @"../../../examples/exports";
         if (!Directory.Exists(exportFolderPath))
         {
             Directory.CreateDirectory(exportFolderPath);
