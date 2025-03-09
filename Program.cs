@@ -96,15 +96,7 @@ class Program
             int row = 3;  // start from row 3 since row 1 is the title and row 2 is for column headers
             foreach (var shift in shifts)
             {
-                // as starting at 3, every second entry (even) display no day name
-                if (row % 2 == 0)
-                {
-                    worksheet.Cells[row, 1].Value = "";
-                } else
-                {
-                    worksheet.Cells[row, 1].Value = shift.Day;
-                }
-                
+                worksheet.Cells[row, 1].Value = shift.Day;
                 worksheet.Cells[row, 2].Value = shift.Time;
                 worksheet.Cells[row, 3].Value = string.Join(", ", shift.AssignedStaff.Select(s => s.Name));
                 row++;
