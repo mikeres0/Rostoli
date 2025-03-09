@@ -1,6 +1,6 @@
 ## Rostoli - C# Rostering Solution
 
-Rostoli is a C# Rostering Solution using a "black box" style input/output system. It takes in a `staff_data.json` file, builds the roster and then exports it to the rosters export folder. The data for this application can be found at the project root in the Examples folder. Underneath that there are two folders one called config and one called exports. You'll find an example config file that can be used. You can modify the paths within the program should you wish to use different input files.
+Rostoli is a C# Rostering Solution using a "black box" style input/output system. Big caveat, it's been made in an hour. It takes in a `staff_data.json` file, builds the roster and then exports it to the rosters export folder. The data for this application can be found at the project root in the Examples folder. Underneath that there are two folders one called config and one called exports. You'll find an example config file that can be used. You can modify the paths within the program should you wish to use different input files.
 
 #### Config
 
